@@ -1,0 +1,68 @@
+---
+title: "R Notebook"
+output:
+  html_document:
+    df_print: paged
+---
+
+# Dining Preference Proportion Test in Campus
+
+```{r}
+data<-read.csv('C:/Users/geete/OneDrive/Desktop/sem3/Stats.csv',header=TRUE)
+data
+```
+
+```{r}
+group1_data <- subset(data, Category == 'Cafe By The Valley')
+group2_data <- subset(data, Category != 'Cafe By The Valley')
+
+group1_data
+group2_data
+
+```
+
+```{r}
+prop_group1 <- nrow(group1_data) / nrow(data)
+prop_group2 <- nrow(group2_data) / nrow(data)
+print(prop_group1)
+print(prop_group2)
+```
+
+## p1 is the proportion of people who prefer Cafe By The Valley
+
+## Null_Hypothesis= p1=0.5
+
+#### Proportion of people who prefer Cafe By The Valley is 50% of the population
+
+## Alternative_Hypothesis= p1\>0.5
+
+#### Proportion of people who prefer Cafe By the Valley is more than 50% of the population
+
+```{r}
+result1<-prop.test(sum(data$Category=='Cafe By The Valley'),nrow(data),alternative='greater')
+print(result1)
+```
+
+## since p-value is lesser than 0.5 , we reject null hypothesis
+
+```{r}
+contingency_table<-table(data$Category)
+print(contingency_table)
+```
+
+## Contingency table shows us the count of each category
+
+```{r}
+table_result <- table(data$Category == 'Cafe By The Valley')
+contingency_table <- matrix(c(table_result, 0), nrow = 2, byrow = TRUE)
+fisher_test_result <- fisher.test(contingency_table)
+print(fisher_test_result)
+
+
+```
+
+## Again the p-value is lesser than 0.5, therefore we reject null hypothesis
+
+------------------------------------------------------------------------
+
+------------------------------------------------------------------------
