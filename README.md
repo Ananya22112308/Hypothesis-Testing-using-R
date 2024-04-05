@@ -1,6 +1,6 @@
 # Hypothesis-Testing-using-R
-Analysis of Dining Preference in The Campus by performing Hypothesis Testing using RStudio <br>
-## Study Objective: <br>
+## Analysis of Dining Preference in The Campus by performing Hypothesis Testing using RStudio <br>
+###  Study Objective: <br>
 The objective of this study is to investigate the proportion of individuals who prefer "Cafe By The Valley" over all other eateries on the campus. The aim was to gather unbiased insights by ensuring an equal representation from each department within the campus, recognizing that different departments may have varying preferences.
 <br>
 ---
