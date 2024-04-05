@@ -13,8 +13,8 @@ Fisher's Exact Test is used for small datasets or 2x2 contingency tables, explor
 The test is particularly useful when dealing with categorical data, as it provides an exact p-value for the observed distribution in the contingency table. This ensures the validity of the statistical inference, especially when analyzing proportions or odds ratios in smaller datasets.<br>
 
 The Fisher's Exact Test gave a low p-value of 0.00384, showing a strong and significant connection between choosing "Cafe By The Valley" and the surveyed group. The infinite odds ratio emphasizes a substantial association, highlighting a clear preference for Cafe By The Valley.<br>
----
+
 Inference:<br>
 Both statistical tests consistently point towards a significant preference for "Cafe By The Valley" among the surveyed individuals. The proportion of individuals favoring this eatery is estimated to be approximately 0.67, and the odds of choosing it over others are significantly different from the null hypothesis value of 1. These findings provide strong evidence to support the inference that "Cafe By The Valley" is a preferred choice among the campus community.
-
+---
 
